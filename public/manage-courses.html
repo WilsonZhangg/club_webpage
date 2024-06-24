@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理課程</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>政大數理資訊研究社 - 管理課程</h1>
+        </div>
+    </header>
+    <main>
+        <form id="manage-courses-form">
+            <input type="hidden" id="course-id">
+            <div class="form-group">
+                <label for="course-name">課程名稱:</label>
+                <input type="text" id="course-name" required>
+            </div>
+            <div class="form-group">
+                <label for="course-teacher">講者:</label>
+                <input type="text" id="course-teacher" required>
+            </div>
+            <div class="form-group">
+                <label for="course-time">時間:</label>
+                <input type="datetime-local" id="course-time" required>
+            </div>
+            <div class="form-group">
+                <label for="course-location">地點:</label>
+                <input type="text" id="course-location" required>
+            </div>
+            <div class="form-group">
+                <label for="course-description">介紹:</label>
+                <textarea id="course-description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="course-image">圖片URL:</label>
+                <input type="text" id="course-image" required>
+            </div>
+            <button type="submit">提交</button>
+        </form>
+    </main>
+    <script src="manage-courses.js"></script>
+</body>
+</html>

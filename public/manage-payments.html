@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理繳費狀態</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>管理繳費狀態</h1>
+        </div>
+    </header>
+    <main>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="username">使用者帳號:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <label for="payment-status">繳費狀態:</label>
+                <select id="payment-status" name="payment-status" required>
+                    <option value="true">已繳費</option>
+                    <option value="false">未繳費</option>
+                </select>
+            </div>
+            <button type="submit" class="action-button">更新狀態</button>
+        </form>
+    </main>
+    <script src="manage-payments-script.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main-header {
+    background-color: #0073e6; /* 改為藍色 */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.login-icon {
+    margin-right: 20px;
+}
+
+.login-icon img {
+    width: 30px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 800px; /* 調整寬度 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.course-card h3 {
+    margin-top: 0;
+}
+
+.course-card a {
+    color: #0073e6; /* 改為藍色 */
+    text-decoration: none;
+}
+
+.course-card a:hover {
+    text-decoration: underline;
+}
+
+/* 課程介紹頁面的樣式 */
+.course-details {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* 調整寬度 */
+    max-width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh; /* 調整高度 */
+}
+
+.course-details-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.course-details-text h2,
+.course-details-text p {
+    margin: 10px 0;
+}
+
+.course-details img {
+    max-width: 400px;
+    border-radius: 10px;
+    display: block;
+    margin: auto; /* 將圖片置於中央 */
+}
+
+/* 登入頁面的樣式 */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    margin-right: 10px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+button, a {
+    color: #0073e6;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+button:hover, a:hover {
+    text-decoration: none;
+}
+
+.profile-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.user-profile-input {
+    display: none;
+}
+
+.profile-info p {
+    margin: 10px 0;
+}
+
+.profile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background-color: #005bb5;
+}
+
+input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: inline-block;
+}

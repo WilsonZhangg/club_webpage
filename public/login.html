@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>政大數理資訊研究社</h1>
+        </div>
+    </header>
+    <main>
+        <h2>登入</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">帳號:</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="password">密碼:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+            <button type="submit">登入</button>
+        </form>
+        <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+            <a href="register.html">創建帳戶</a>
+            <a href="change-password.html">修改密碼</a>
+        </div>
+    </main>
+    <script src="login-script.js"></script>
+</body>
+</html>

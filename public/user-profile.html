@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人資料</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>政大數理資訊研究社</h1>
+        </div>
+    </header>
+    <main>
+        <h2>個人資料</h2>
+        <div id="user-profile" class="profile-container">
+            <div class="profile-info">
+                <p>繳費與否: <span id="payment-status"></span></p>
+                <p>姓名: <span id="user-name"></span></p>
+                <p>系級: <span id="user-department"></span></p>
+                <p>學號: <span id="user-id"></span></p>
+            </div>
+            <div class="profile-actions">
+                <button id="edit-button" class="action-button">修改</button>
+                <button id="confirm-button" class="action-button" style="display: none;">確認</button>
+            </div>
+        </div>
+    </main>
+    <script src="user-profile-script.js"></script>
+</body>
+</html>
